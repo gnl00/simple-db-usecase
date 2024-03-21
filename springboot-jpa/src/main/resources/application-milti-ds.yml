@@ -1,0 +1,21 @@
+# 多数据源配置
+spring:
+  application:
+    name: db-uc-springboot-jpa
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    poetry:
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/poetry?characterEncoding=utf-8&allowMultiQueries=true&autoReconnect=true
+    novel:
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://localhost:3306/novel?characterEncoding=utf-8&allowMultiQueries=true&autoReconnect=true
