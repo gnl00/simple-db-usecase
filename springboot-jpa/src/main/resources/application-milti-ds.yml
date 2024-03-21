@@ -1,7 +1,7 @@
 # 多数据源配置
 spring:
   application:
-    name: db-uc-springboot-jpa
+    name: db-uc-springboot-jpa-multi-datasource
   jpa:
     generate-ddl: false
     show-sql: true
